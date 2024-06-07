@@ -1,11 +1,9 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores: number[]) => {
-   // Adds all scores together and divides by the number of scores
-  let total = scores.reduce((sum, score) => sum + score);
-  return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function adds two numbers and returns the result
+function addNumbers(num1: number, num2: number): number {
+  // Calculates the sum of num1 and num2
+  return num1 + num2;
+}
 
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+// Calling the function with two numbers and logging the result
+console.log(addNumbers(5, 7)); // Outputs 12
+// Here, we ask our function to add 5 and 7, and it tells us the answer is 12.

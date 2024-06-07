@@ -1,11 +1,8 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores: number[]) => {
-   // Adds all scores together and divides by the number of scores
-  let total = scores.reduce((sum, score) => sum + score);
-  return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function finds where "code" first shows up in a text
+function findCodePosition(str: string): number {
+  return str.indexOf("code"); // Looks for "code" and tells where it found it
+}
 
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+// Example: Searching within a sentence
+console.log(findCodePosition("Learn to code with JavaScript")); // Outputs the start position of "code"
+// It tells us the position number where "code" starts.

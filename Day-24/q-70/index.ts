@@ -1,11 +1,11 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores: number[]) => {
-   // Adds all scores together and divides by the number of scores
-  let total = scores.reduce((sum, score) => sum + score);
-  return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function prints numbers from 1 to 5 using a loop
+function printNumbersWithLet() {
+  for (let i = 1; i <= 5; i++) {
+    // Uses `let` for loop variable `i`
+    console.log(i); // Logs numbers 1 through 5
+  }
+  // `i` is not accessible here, outside the loop, because it's defined with `let`
+}
 
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+printNumbersWithLet();
+// This shows that `let` limits `i` to the loop, preventing errors from using `i` where it's not intended.

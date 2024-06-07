@@ -1,13 +1,14 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd: number): (number) => number {
-  // This is the magic box. It takes a number and adds your special number to it
-  return function (number: number): number {
-    return number + valueToAdd;
-  };
+// Function declaration for squaring a number
+function squareDeclaration(number: number): number {
+  return number * number;
 }
 
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
-// We made a function (magic box) that adds 5 to any number.
+// Function expression for squaring a number
+const squareExpression = function(number: number): number {
+  return number * number;
+};
+
+// Using both functions to square the number 4
+console.log(squareDeclaration(4)); // Outputs: 16
+console.log(squareExpression(4)); // Outputs: 16
+// Both methods give us the same result, showing two different ways to create functions that do the same thing.

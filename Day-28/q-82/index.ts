@@ -1,11 +1,8 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores: number[]) => {
-   // Adds all scores together and divides by the number of scores
-  let total = scores.reduce((sum, score) => sum + score);
-  return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function counts how many characters are in a string
+function stringLength(str: string): number {
+  return str.length; // Returns the number of characters in the string
+}
 
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+// Example: Measuring the length of a name
+console.log(stringLength("Alice")); // Outputs: 5
+// We're simply asking how long the string "Alice" is, and it tells us there are 5 characters.

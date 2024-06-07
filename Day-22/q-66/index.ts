@@ -1,13 +1,9 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd: number): (number) => number {
-  // This is the magic box. It takes a number and adds your special number to it
-  return function (number: number): number {
-    return number + valueToAdd;
-  };
+// This function sees if both inputs are true
+function checkBothTrue(val1: boolean, val2: boolean): boolean {
+  // Only says true if both val1 and val2 are true
+  return val1 && val2;
 }
 
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
-// We made a function (magic box) that adds 5 to any number.
+// Trying it with true and false
+console.log(checkBothTrue(true, false)); // Shows false
+// It checks two things, but since one is false, the answer is false.

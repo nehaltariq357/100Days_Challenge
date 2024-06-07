@@ -1,13 +1,9 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function checks if a value is Not a Number (NaN)
+function isValueNaN(value) {
+    return isNaN(value); // Checks and returns true if the value is NaN, false otherwise
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// Examples: Checking different values
+console.log(isValueNaN("hello")); // Outputs: true, because "hello" isn't a number
+console.log(isValueNaN(123)); // Outputs: false, because 123 is a number
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// This way, we can guard against unexpected non-numeric values in our calculations or inputs.

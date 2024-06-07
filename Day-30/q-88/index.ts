@@ -1,11 +1,9 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores: number[]) => {
-   // Adds all scores together and divides by the number of scores
-  let total = scores.reduce((sum, score) => sum + score);
-  return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function rounds a decimal number to the nearest whole number
+function roundToNearestInteger(num: number): number {
+  return Math.round(num); // Rounds the number
+}
 
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+// Example: Rounding a decimal
+console.log(roundToNearestInteger(4.7)); // Outputs: 5
+console.log(roundToNearestInteger(4.4)); // Outputs: 4
+// This shows how the function rounds numbers either up or down.

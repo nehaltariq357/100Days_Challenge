@@ -1,13 +1,8 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function takes out the first 10 characters from any text
+function extractFirstTenChars(str) {
+    return str.substring(0, 10); // Gets characters from start to position 10
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// Example: Taking the first 10 characters of a sentence
+console.log(extractFirstTenChars("Hello, JavaScript world!")); // Shows the first 10 characters
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// It gives us a smaller piece of the original text, just the beginning part.

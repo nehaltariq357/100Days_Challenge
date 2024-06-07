@@ -1,13 +1,12 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function shows every detail about an object
+function logObjectProperties(obj) {
+    for (let property in obj) {
+        // Loops through each property in the object
+        console.log(`${property}: ${obj[property]}`);
+        // Shows the property name and its value
+    }
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// Using the function with a car object
+logObjectProperties({ make: "Toyota", model: "Corolla", year: 2021, color: "blue" });
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// It tells us each piece of information stored about the car.

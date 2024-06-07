@@ -1,13 +1,16 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function uses compound assignment operators for different operations
+function useCompoundOperators() {
+    let x = 4; // Starts with x equal to 4
+    console.log("Initial x:", x);
+    x += 2; // Adds 2 to x
+    console.log("After addition:", x); // Shows x after addition
+    x -= 1; // Subtracts 1 from x
+    console.log("After subtraction:", x); // Shows x after subtraction
+    x *= 3; // Multiplies x by 3
+    console.log("After multiplication:", x); // Shows x after multiplication
+    x /= 2; // Divides x by 2
+    console.log("After division:", x); // Shows x after division
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+useCompoundOperators();
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// We simplify arithmetic operations on x using compound assignment operators, like a shortcut.

@@ -1,11 +1,10 @@
-// This program calculates the average of all scores given
-const averageScore = (...scores) => {
-    // Adds all scores together and divides by the number of scores
-    let total = scores.reduce((sum, score) => sum + score);
-    return total / scores.length;
-};
-// Example: finding the average of four scores
-console.log(averageScore(90, 70, 80, 85, 75, 88));
+// This function shows how to assign and update variable values
+function updateVariable() {
+    let number = 10; // Initially assigns the value 10
+    console.log("Initial value:", number); // Logs the initial value
+    number = 20; // Updates the value to 20
+    console.log("Updated value:", number); // Logs the updated value
+}
+updateVariable();
 export {};
-// Shows the average score
-// We add up all the scores, then divide by how many there are.
+// We assign a value to a variable and then update it, showing how values can change.

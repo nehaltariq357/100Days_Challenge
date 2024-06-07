@@ -1,13 +1,10 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function swaps "JavaScript" with "TypeScript" in a sentence
+function replaceJavaScriptWithTypeScript(sentence) {
+    return sentence.replace(/JavaScript/g, "TypeScript");
+    // Uses a regular expression with the 'g' flag for a global replacement
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// Example: Changing a programming language name in a sentence
+console.log(replaceJavaScriptWithTypeScript("I love JavaScript and JavaScript is awesome!"));
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// Outputs: "I love TypeScript and TypeScript is awesome!"
+// Every "JavaScript" in the sentence is changed to "TypeScript".

@@ -1,13 +1,12 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd) {
-    // This is the magic box. It takes a number and adds your special number to it
-    return function (number) {
-        return number + valueToAdd;
-    };
+// This function divides two numbers and finds the quotient and remainder
+function divideAndRemainder(dividend, divisor) {
+    // Calculates the quotient and remainder
+    let quotient = Math.floor(dividend / divisor);
+    let remainder = dividend % divisor;
+    // Returns both in an object
+    return { quotient, remainder };
 }
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// Trying it with 10 divided by 3
+console.log(divideAndRemainder(10, 3)); // Shows { quotient: 3, remainder: 1 }
 export {};
-// We made a function (magic box) that adds 5 to any number.
+// It shows how many times 3 goes into 10, and what's left over.

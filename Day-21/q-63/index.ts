@@ -1,13 +1,25 @@
-// This program makes a function that adds a specific number
-//@ts-ignore
-function makeAdder(valueToAdd: number): (number) => number {
-  // This is the magic box. It takes a number and adds your special number to it
-  return function (number: number): number {
-    return number + valueToAdd;
-  };
-}
+// Creating a custom type (type alias) for shapes that could be circles or rectangles
 
-// Making a magic box that adds 5
-let addFive = makeAdder(5);
-console.log(addFive(10)); // If we put 10 in the box, it gives us 15
-// We made a function (magic box) that adds 5 to any number.
+type Shape = {
+  kind: "circle" | "rectangle";
+  radius?: number; // Only for circlesc
+  width?: number; // Only for rectangles
+  height?: number; // Only for rectangles
+};
+// Describing a circle using our Shape type
+let circle: Shape = {
+  kind: "circle",
+  radius: 5,
+};
+// Describing a rectangle using our Shape type
+
+let rectangle: Shape = {
+  kind: "rectangle",
+  width: 10,
+  height: 20,
+};
+// Showing what we described
+
+console.log(circle);
+console.log(rectangle);
+// We made a flexible program that can describe different shapes in detail.
