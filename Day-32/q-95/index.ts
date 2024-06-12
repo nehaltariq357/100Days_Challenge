@@ -1,6 +1,6 @@
 
 // This function filters an array, keeping only numbers greater than 10
-git function filterGreaterThanTen(numbers: number[]): number[] {
+ function filterGreaterThanTen(numbers: number[]): number[] {
   return numbers.filter(number => number > 10);
 }
 

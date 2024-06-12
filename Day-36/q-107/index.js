@@ -1,12 +1,9 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits) {
-    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-    if (index !== -1)
-        fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// This function checks if a number is divisible by both 2 and 3
+function isDivisibleByTwoAndThree(number) {
+    // Uses the modulo operator to check for no remainder
+    return number % 2 === 0 && number % 3 === 0;
 }
-// Example: Replacing "Banana" in the array
-const fruits = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
+console.log(isDivisibleByTwoAndThree(12)); // Outputs: true
+console.log(isDivisibleByTwoAndThree(14)); // Outputs: false
 export {};
-// We're swapping "Banana" for "Mango" in our fruit list.
+// Logical operators help us verify the number's divisibility by both 2 and 3.

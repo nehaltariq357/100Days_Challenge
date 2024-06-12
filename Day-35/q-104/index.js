@@ -6,4 +6,3 @@ function getRandomHexColor() {
 console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12
 export {};
 // We generate a random number, convert it to hexadecimal, and ensure it's 6 characters long.
-//continue from here 

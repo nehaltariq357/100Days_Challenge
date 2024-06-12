@@ -1,10 +1,7 @@
-// This function removes the last element from an array and returns it
-function removeLastElement<T>(arr: T[]): T | undefined {
-  return arr.pop(); // Removes and returns the last element of the array
+// This function simulates rolling a dice and returns a number between 1 and 6
+function rollDice(): number {
+  return Math.floor(Math.random() * 6) + 1; // Calculates a random integer from 1 to 6
 }
 
-// Example: Removing the last fruit from the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
-// Here, we take out the last fruit and show the updated list.
+console.log(rollDice()); // Outputs a random number between 1 and 6
+// Here, we mimic the action of rolling a dice and getting a result.

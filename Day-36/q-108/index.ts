@@ -1,10 +1,9 @@
-// This function removes the last element from an array and returns it
-function removeLastElement<T>(arr: T[]): T | undefined {
-  return arr.pop(); // Removes and returns the last element of the array
+// This function compares two strings, ignoring case sensitivity
+function areStringsEqualIgnoreCase(str1: string, str2: string): boolean {
+  // Converts both strings to lowercase before comparison
+  return str1.toLowerCase() === str2.toLowerCase();
 }
 
-// Example: Removing the last fruit from the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
-// Here, we take out the last fruit and show the updated list.
+console.log(areStringsEqualIgnoreCase("hello", "Hello")); // Outputs: true
+console.log(areStringsEqualIgnoreCase("world", "Word")); // Outputs: false
+// We make both strings lowercase to ensure the comparison ignores case differences.
