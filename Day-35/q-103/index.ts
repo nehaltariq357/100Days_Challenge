@@ -1,6 +1,7 @@
-// Defines an array with three favorite fruits
-let favoriteFruits: string[] = ["Apple", "Banana", "Cherry"];
-favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
+// This function returns a random boolean value
+function getRandomBoolean(): boolean {
+  return Math.random() > 0.5; // Returns true if the random number is greater than 0.5
+}
 
-console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
-// This line adds a new fruit to our list of favorites.
+console.log(getRandomBoolean()); // Outputs either true or false randomly
+// By comparing a random number to 0.5, we effectively get a true or false value randomly.

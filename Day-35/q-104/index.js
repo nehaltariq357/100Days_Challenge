@@ -1,12 +1,9 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits) {
-    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-    if (index !== -1)
-        fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// This function generates a random hexadecimal color code
+function getRandomHexColor() {
+    const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    return color; // Returns the random color code
 }
-// Example: Replacing "Banana" in the array
-const fruits = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
+console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12
 export {};
-// We're swapping "Banana" for "Mango" in our fruit list.
+// We generate a random number, convert it to hexadecimal, and ensure it's 6 characters long.
+//continue from here 

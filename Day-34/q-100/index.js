@@ -1,6 +1,5 @@
-// Defines an array with three favorite fruits
-let favoriteFruits = ["Apple", "Banana", "Cherry"];
-favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
-console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
+// Finds the square root of 144 using Math.sqrt()
+const squareRoot = Math.sqrt(144);
+console.log(squareRoot); // Outputs: 12
 export {};
-// This line adds a new fruit to our list of favorites.
+// This line effectively calculates and shows the square root of 144.

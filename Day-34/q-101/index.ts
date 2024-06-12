@@ -1,11 +1,7 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits: string[]): void {
-  const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-  if (index !== -1) fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// Generates a random integer between 1 and 10
+function getRandomInt(): number {
+  return Math.floor(Math.random() * 10) + 1;
 }
 
-// Example: Replacing "Banana" in the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
-// We're swapping "Banana" for "Mango" in our fruit list.
+console.log(getRandomInt()); // Outputs a random integer between 1 and 10
+// This function combines Math.random() with Math.floor() to create a random integer within our range.

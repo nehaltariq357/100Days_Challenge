@@ -1,12 +1,9 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits) {
-    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-    if (index !== -1)
-        fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// This function calculates the sum of all numbers in an array
+function calculateSum(numbers) {
+    return numbers.reduce((accumulator, current) => accumulator + current, 0);
 }
-// Example: Replacing "Banana" in the array
-const fruits = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
+// Example: Calculating the sum of an array of numbers
+const numbers = [1, 2, 3, 4, 5];
+console.log(calculateSum(numbers)); // Outputs: 15
 export {};
-// We're swapping "Banana" for "Mango" in our fruit list.
+// It adds up all the numbers in the array, resulting in a single sum value.

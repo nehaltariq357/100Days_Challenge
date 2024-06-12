@@ -1,10 +1,5 @@
-// This function removes the last element from an array and returns it
-function removeLastElement(arr) {
-    return arr.pop(); // Removes and returns the last element of the array
-}
-// Example: Removing the last fruit from the array
-const fruits = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
+// Calculates the absolute difference between -5 and 5
+const difference = Math.abs(-5 - 5);
+console.log(difference); // Outputs: 10
 export {};
-// Here, we take out the last fruit and show the updated list.
+// This line shows the absolute value of the difference between -5 and 5, ignoring the sign.
