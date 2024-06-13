@@ -1,6 +1,7 @@
-// Defines an array with three favorite fruits
-let favoriteFruits = ["Apple", "Banana", "Cherry"];
-favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
-console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
+// Checks the current hour and logs "Good Morning" if it's before 12 PM
+const currentTime = new Date();
+if (currentTime.getHours() < 12) {
+    console.log("Good Morning"); // It's morning if before 12 PM
+}
 export {};
-// This line adds a new fruit to our list of favorites.
+// This simple check helps us greet users appropriately based on the time of day.

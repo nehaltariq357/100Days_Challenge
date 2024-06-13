@@ -1,12 +1,20 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits) {
-    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-    if (index !== -1)
-        fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+function assignGrade(score) {
+    if (score >= 90) {
+        return "A";
+    }
+    else if (score >= 80) {
+        return "B";
+    }
+    else if (score >= 70) {
+        return "C";
+    }
+    else if (score >= 60) {
+        return "D";
+    }
+    else {
+        return "F";
+    }
 }
-// Example: Replacing "Banana" in the array
-const fruits = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
+console.log(assignGrade(85)); // Outputs: B
+console.log(assignGrade(55)); // Outputs: F
 export {};
-// We're swapping "Banana" for "Mango" in our fruit list.

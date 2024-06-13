@@ -1,6 +1,10 @@
-// Defines an array with three favorite fruits
-let favoriteFruits: string[] = ["Apple", "Banana", "Cherry"];
-favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
+// Creates a new Map to store countries and their capitals
+const countries = new Map<string, string>();
+countries.set("USA", "Washington, D.C."); // Adds USA to the Map
+countries.set("France", "Paris"); // Adds France to the Map
+countries.set("Japan", "Tokyo"); // Adds Japan to the Map
 
-console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
-// This line adds a new fruit to our list of favorites.
+console.log(countries);
+// Logs the Map with the countries and their capitals.
+
+// contiune from here 
