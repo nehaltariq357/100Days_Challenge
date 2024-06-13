@@ -1,11 +1,36 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits: string[]): void {
-  const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-  if (index !== -1) fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
-}
+const logSeason = (month: string) => {
+  switch (
+    month.toLowerCase() // Convert month to lowercase to handle case insensitivity
+  ) {
+    case "december":
+    case "january":
+    case "february":
+      console.log("Winter");
+      break;
+    case "march":
+    case "april":
+    case "may":
+      console.log("Spring"); // Capitalized for consistency
+      break;
+    case "june":
+    case "july":
+    case "august":
+      console.log("Summer"); // Capitalized for consistency
+      break;
+    case "september":
+    case "october": // Fixed typo from "octuber" to "october"
+    case "november":
+      console.log("Fall"); // Capitalized for consistency
+      break;
+    default:
+      console.log("Invalid month");
+      break;
+  }
+};
 
-// Example: Replacing "Banana" in the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
-// We're swapping "Banana" for "Mango" in our fruit list.
+// Testing the function
+logSeason("November"); // "Fall"
+logSeason("JUNE"); // "Summer" (Case insensitive check)
+logSeason("octuber"); // "Invalid month" (Typo case)
+logSeason("feburary"); // "Invalid month" (Typo case)
+logSeason("May"); // "Spring"

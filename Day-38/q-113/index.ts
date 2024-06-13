@@ -1,11 +1,23 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits: string[]): void {
-  const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-  if (index !== -1) fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// Answer of Q12:
+// Creates a new Map to store countries and their capitals
+const countries = new Map<string, string>();
+countries.set("USA", "Washington, D.C."); // Adds USA to the Map
+countries.set("France", "Paris"); // Adds France to the Map
+countries.set("Japan", "Tokyo"); // Adds Japan to the Map
+
+console.log(countries);
+// Logs the Map with the countries and their capitals.
+
+// Answer of Q13:
+// This function checks for "Canada" in the Map and logs its capital
+function logCapitalOfCanada(countries: Map<string, string>): void {
+  if (countries.has("Canada")) {
+    console.log(`The capital of Canada is ${countries.get("Canada")}`);
+  } else {
+    console.log("Canada is not in the Map.");
+  }
 }
 
-// Example: Replacing "Banana" in the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
-// We're swapping "Banana" for "Mango" in our fruit list.
+// Assuming countries Map from Question 112
+logCapitalOfCanada(countries);
+// Checks if Canada is in our Map and logs the capital if it exists.

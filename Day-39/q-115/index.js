@@ -1,6 +1,32 @@
-// Defines an array with three favorite fruits
-let favoriteFruits = ["Apple", "Banana", "Cherry"];
-favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
-console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
+// This function logs the day of the week based on a number (1-7)
+function logDayOfWeek(dayNumber) {
+    switch (dayNumber) {
+        case 1:
+            console.log("Sunday");
+            break;
+        case 2:
+            console.log("Monday");
+            break;
+        case 3:
+            console.log("Tuesday");
+            break;
+        case 4:
+            console.log("Wednesday");
+            break;
+        case 5:
+            console.log("Thursday");
+            break;
+        case 6:
+            console.log("Friday");
+            break;
+        case 7:
+            console.log("Saturday");
+            break;
+        default:
+            console.log("Invalid day number");
+            break;
+    }
+}
+logDayOfWeek(3); // Outputs: Tuesday
 export {};
-// This line adds a new fruit to our list of favorites.
+// Uses a switch statement to select the appropriate day based on the provided number.

@@ -1,10 +1,26 @@
-// This function removes the last element from an array and returns it
-function removeLastElement<T>(arr: T[]): T | undefined {
-  return arr.pop(); // Removes and returns the last element of the array
+// This function evaluates a grade and logs the corresponding remark
+function evaluateGrade(grade: string): void {
+  switch (grade) {
+    case "A":
+      console.log("Excellent");
+      break;
+    case "B":
+      console.log("Good");
+      break;
+    case "C":
+      console.log("Fair");
+      break;
+    case "D":
+      console.log("Poor");
+      break;
+    case "F":
+      console.log("Fail");
+      break;
+    default:
+      console.log("Invalid grade");
+      break;
+  }
 }
 
-// Example: Removing the last fruit from the array
-const fruits: string[] = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
-// Here, we take out the last fruit and show the updated list.
+evaluateGrade("B"); // Outputs: Good
+// Uses a switch statement to evaluate the grade and defaults to "Invalid grade" if no match is found.

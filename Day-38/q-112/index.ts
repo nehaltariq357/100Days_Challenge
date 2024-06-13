@@ -6,5 +6,3 @@ countries.set("Japan", "Tokyo"); // Adds Japan to the Map
 
 console.log(countries);
 // Logs the Map with the countries and their capitals.
-
-// contiune from here 

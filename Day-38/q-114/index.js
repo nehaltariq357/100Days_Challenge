@@ -1,10 +1,11 @@
-// This function removes the last element from an array and returns it
-function removeLastElement(arr) {
-    return arr.pop(); // Removes and returns the last element of the array
-}
-// Example: Removing the last fruit from the array
-const fruits = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
+// Creates a Map to store student IDs (keys) and names (values)
+const students = new Map();
+students.set(1, "Alice");
+students.set(2, "Bob");
+students.set(3, "Charlie");
+// Iterates over the Map and logs each student ID and name
+students.forEach((name, id) => {
+    console.log(`Student ID: ${id}, Name: ${name}`);
+});
 export {};
-// Here, we take out the last fruit and show the updated list.
+// This loop goes through each student and logs their ID and name.
