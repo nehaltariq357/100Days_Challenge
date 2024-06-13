@@ -1,12 +1,12 @@
-// This function finds "Banana" in the fruits array and replaces it with "Mango"
-function replaceBananaWithMango(fruits) {
-    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
-    if (index !== -1)
-        fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
+// Initializes the counter at 10
+let counter = 10;
+// This while loop counts down from 10 to 1 and stops at 5
+while (counter > 0) {
+    if (counter === 5) {
+        break; // Exits the loop when counter reaches 5
+    }
+    console.log(counter);
+    counter--; // Decrements the counter
 }
-// Example: Replacing "Banana" in the array
-const fruits = ["Apple", "Banana", "Cherry"];
-replaceBananaWithMango(fruits);
-console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
 export {};
-// We're swapping "Banana" for "Mango" in our fruit list.
+// Logs the countdown from 10 but stops abruptly when it hits 5.

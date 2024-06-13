@@ -5,4 +5,4 @@ while (count < 5) {
   console.log("Hello, World!"); // Logs "Hello, World!"
   count++; // Increments count by 1
 }
-// continue from here
+// Repeats logging "Hello, World!" 5 times, once per loop iteration.

@@ -1,10 +1,13 @@
-// This function removes the last element from an array and returns it
-function removeLastElement(arr) {
-    return arr.pop(); // Removes and returns the last element of the array
+// Defines an array of favorite movies
+const favoriteMovies = [
+    "Inception",
+    "The Matrix",
+    "Interstellar",
+    "The Prestige",
+];
+// Uses a for...of loop to iterate through favoriteMovies
+for (const movie of favoriteMovies) {
+    console.log(movie); // Logs each movie name
 }
-// Example: Removing the last fruit from the array
-const fruits = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
 export {};
-// Here, we take out the last fruit and show the updated list.
+// Each movie in the array is logged to the console, one at a time.

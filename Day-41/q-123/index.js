@@ -1,10 +1,14 @@
-// This function removes the last element from an array and returns it
-function removeLastElement(arr) {
-    return arr.pop(); // Removes and returns the last element of the array
+// This function iterates through a string and logs each character until it finds a vowel
+function logUntilVowel(str) {
+    const vowels = "aeiouAEIOU";
+    for (const char of str) {
+        if (vowels.includes(char)) {
+            console.log(`First vowel found: ${char}`);
+            break; // Stops the loop at the first vowel found
+        }
+        console.log(char); // Logs each character until a vowel is encountered
+    }
 }
-// Example: Removing the last fruit from the array
-const fruits = ["Apple", "Banana", "Cherry"];
-console.log(removeLastElement(fruits)); // Outputs: 'Cherry'
-console.log(fruits); // Outputs: ['Apple', 'Banana']
+logUntilVowel("syzygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
 export {};
-// Here, we take out the last fruit and show the updated list.
+// Demonstrates iterating through a string and stopping at the first vowel.

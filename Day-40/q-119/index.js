@@ -6,4 +6,4 @@ while (count < 5) {
     count++; // Increments count by 1
 }
 export {};
-// continue from here
+// Repeats logging "Hello, World!" 5 times, once per loop iteration.
