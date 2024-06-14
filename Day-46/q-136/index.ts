@@ -1,14 +1,5 @@
-// This function iterates through a string and logs each character until it finds a vowel
-function logUntilVowel(str: string): void {
-  const vowels = "aeiouAEIOU";
-  for (const char of str) {
-    if (vowels.includes(char)) {
-      console.log(`First vowel found: ${char}`);
-      break; // Stops the loop at the first vowel found
-    }
-    console.log(char); // Logs each character until a vowel is encountered
-  }
+// Demonstrates using console.log() inside a loop to track variable values
+for (let i = 1; i <= 5; i++) {
+  console.log(`Iteration ${i}, i value:, i`); // Logs the current iteration number and the value of i
 }
-
-logUntilVowel("syzygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
-// Demonstrates iterating through a string and stopping at the first vowel.
+// This loop iterates five times, logging the value of 'i' during each iteration to help with debugging.

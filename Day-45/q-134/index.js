@@ -1,14 +1,7 @@
-// This function iterates through a string and logs each character until it finds a vowel
-function logUntilVowel(str) {
-    const vowels = "aeiouAEIOU";
-    for (const char of str) {
-        if (vowels.includes(char)) {
-            console.log(`First vowel found: ${char}`);
-            break; // Stops the loop at the first vowel found
-        }
-        console.log(char); // Logs each character until a vowel is encountered
-    }
-}
-logUntilVowel("syzygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
+// Defines a JSON string
+const jsonString = '{"name":"Alice","age":30,"city":"Wonderland"}';
+// Parses the JSON string back into a JavaScript object
+const person = JSON.parse(jsonString);
+console.log(person); // Outputs the original object
 export {};
-// Demonstrates iterating through a string and stopping at the first vowel.
+// This snippet shows how to take a JSON string and convert it back into a JavaScript object.

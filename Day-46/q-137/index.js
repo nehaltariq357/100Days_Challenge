@@ -1,12 +1,11 @@
-// Initializes the counter at 10
-let counter = 10;
-// This while loop counts down from 10 to 1 and stops at 5
-while (counter > 0) {
-    if (counter === 5) {
-        break; // Exits the loop when counter reaches 5
-    }
-    console.log(counter);
-    counter--; // Decrements the counter
+// Demonstrates using a try-catch block to handle errors
+try {
+    // Intentionally cause an error
+    throw new Error("Something went wrong");
+}
+catch (error) {
+    console.log(error.message); // Logs the error message
 }
 export {};
-// Logs the countdown from 10 but stops abruptly when it hits 5.
+// This code tries to execute a block that throws an error, and the catch block handles the error gracefully.
+// continue from here

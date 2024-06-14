@@ -1,12 +1,18 @@
-// Initializes the counter at 10
-let counter = 10;
-// This while loop counts down from 10 to 1 and stops at 5
-while (counter > 0) {
-    if (counter === 5) {
-        break; // Exits the loop when counter reaches 5
-    }
-    console.log(counter);
-    counter--; // Decrements the counter
-}
+// Reusing the person object from Question 133
+const person = {
+    name: "Alice",
+    age: 30,
+    city: "Wonderland",
+};
+// Converts the object into a JSON string with indentation
+const jsonString = JSON.stringify(person, null, 2); // The '2' specifies the number of spaces to use as white space
+console.log(jsonString);
 export {};
-// Logs the countdown from 10 but stops abruptly when it hits 5.
+/* Outputs:
+{
+  "name": "Alice",
+  "age": 30,
+  "city": "Wonderland"
+}
+*/
+// Shows how adding indentation to the JSON string makes it easier to read.
