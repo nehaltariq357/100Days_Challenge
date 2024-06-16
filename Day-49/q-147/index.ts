@@ -1,14 +1,27 @@
-// This function iterates through a string and logs each character until it finds a vowel
-function logUntilVowel(str: string): void {
-  const vowels = "aeiouAEIOU";
-  for (const char of str) {
-    if (vowels.includes(char)) {
-      console.log(`First vowel found: ${char}`);
-      break; // Stops the loop at the first vowel found
-    }
-    console.log(char); // Logs each character until a vowel is encountered
+// Function that uses a callback pattern, including error handling
+function fetchData(callback: (error: Error | null, data?: string) => void): void {
+  // Simulating an error condition
+  const error = new Error("Failed to fetch data");
+  const data = "Some data";
+
+  // Simulate fetching data with a chance of error
+  if (Math.random() > 0.5) {
+    callback(null, data); // No error, data is fetched successfully
+  } else {
+    callback(error); // Passes error to the callback
   }
 }
 
-logUntilVowel("syzygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
-// Demonstrates iterating through a string and stopping at the first vowel.
+// Using the fetchData function with error handling in the callback
+fetchData((error, data) => {
+  if (error) {
+    console.error(error.message); // Handles the error
+  } else {
+    console.log(data); // Processes the data
+  }
+});
+// Demonstrates a callback pattern where errors are handled gracefully.
+
+
+// skipping this question , and solve later with 98,99
+

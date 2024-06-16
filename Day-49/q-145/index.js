@@ -9,4 +9,3 @@ const add = (a, b) => {
 executeCallback(add, 5, 3); // Outputs: 8
 export {};
 // Demonstrates invoking a callback function with arguments to perform an addition.
-// continue from here 

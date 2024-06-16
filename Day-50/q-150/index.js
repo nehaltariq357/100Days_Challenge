@@ -1,12 +1,13 @@
-// Initializes the counter at 10
-let counter = 10;
-// This while loop counts down from 10 to 1 and stops at 5
-while (counter > 0) {
-    if (counter === 5) {
-        break; // Exits the loop when counter reaches 5
-    }
-    console.log(counter);
-    counter--; // Decrements the counter
-}
+// Synchronous example
+console.log("Before synchronous operation");
+// Simulate a synchronous blocking operation
+for (let i = 0; i < 1e9; i++) { } // A long loop
+console.log("After synchronous operation");
+// Asynchronous example
+console.log("Before asynchronous operation");
+setTimeout(() => {
+    console.log("Asynchronous operation completed");
+}, 1000);
+console.log("After asynchronous operation setup");
 export {};
-// Logs the countdown from 10 but stops abruptly when it hits 5.
+// Demonstrates how the rest of the code continues to execute without waiting for the asynchronous operation.

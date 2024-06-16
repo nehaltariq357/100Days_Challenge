@@ -1,16 +1,9 @@
-
-
-
-
-
-
-
 // This function accepts a callback function and invokes it with given arguments
 function executeCallback(
   callback: (arg1: number, arg2: number) => void,
   arg1: number,
   arg2: number
-) {
+): void {
   callback(arg1, arg2); // Invokes the callback with the specified arguments
 }
 
@@ -21,6 +14,3 @@ const add = (a: number, b: number) => {
 
 executeCallback(add, 5, 3); // Outputs: 8
 // Demonstrates invoking a callback function with arguments to perform an addition.
-
-
-// continue from here 
