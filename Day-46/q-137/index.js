@@ -8,4 +8,3 @@ catch (error) {
 }
 export {};
 // This code tries to execute a block that throws an error, and the catch block handles the error gracefully.
-// continue from here

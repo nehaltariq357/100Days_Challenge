@@ -1,12 +1,11 @@
-// Initializes the counter at 10
-let counter = 10;
-// This while loop counts down from 10 to 1 and stops at 5
-while (counter > 0) {
-    if (counter === 5) {
-        break; // Exits the loop when counter reaches 5
-    }
-    console.log(counter);
-    counter--; // Decrements the counter
-}
+// Example using Promise.all to wait for multiple promises to resolve
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve) => {
+    setTimeout(resolve, 100, "foo");
+});
+Promise.all([promise1, promise2, promise3]).then((values) => {
+    console.log(values); // Outputs: [3, 42, "foo"]
+});
 export {};
-// Logs the countdown from 10 but stops abruptly when it hits 5.
+// This demonstrates how Promise.all waits for all promises to resolve and then logs the array of their results.

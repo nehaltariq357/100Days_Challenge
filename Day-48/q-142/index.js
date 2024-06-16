@@ -1,9 +1,9 @@
-// This for loop counts from 1 to 10 but skips 5
-for (let i = 1; i <= 10; i++) {
-    if (i === 5) {
-        continue; // Skips the rest of the loop for i = 5
-    }
-    console.log(i); // Logs numbers 1-4 and 6-10
-}
+// Creates a Promise that resolves with "Hello, World!" after 2 seconds
+const helloPromise = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve("Hello, World!");
+    }, 2000);
+});
+helloPromise.then((message) => console.log(message));
 export {};
-// It demonstrates how to use 'continue' to skip a specific iteration.
+// After 2 seconds, "Hello, World!" will be logged to the console.
