@@ -2,4 +2,7 @@
 
 **Day-51 Task:**
 
-Read the following article:[Top 10 Programming Tips For Beginners](https://www.geeksforgeeks.org/programming-tips-for-beginners/) 
+ <a href="https://www.geeksforgeeks.org/programming-tips-for-beginners/" target="_blank">Top 10 Programming Tips For Beginners</a>
+
+
+<!-- Read the following article:[Top 10 Programming Tips For Beginners](https://www.geeksforgeeks.org/programming-tips-for-beginners/)  -->
